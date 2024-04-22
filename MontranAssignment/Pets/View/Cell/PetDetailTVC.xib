@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="PetDetailTVC" customModule="MontranAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPQ-8I-hNM">
+                        <rect key="frame" x="0.0" y="0.0" width="396" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9qX-6s-yHl">
+                                <rect key="frame" x="15" y="20" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GYJ-za-VUX"/>
+                                    <constraint firstAttribute="width" constant="60" id="wNt-b7-rkg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEO-iF-S6z">
+                                <rect key="frame" x="85" y="10" width="296" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9qX-6s-yHl" firstAttribute="centerY" secondItem="QPQ-8I-hNM" secondAttribute="centerY" id="9ur-NO-cal"/>
+                            <constraint firstAttribute="bottom" secondItem="SEO-iF-S6z" secondAttribute="bottom" constant="10" id="HQY-LZ-tgl"/>
+                            <constraint firstItem="SEO-iF-S6z" firstAttribute="leading" secondItem="9qX-6s-yHl" secondAttribute="trailing" constant="10" id="Iuv-54-DJr"/>
+                            <constraint firstItem="9qX-6s-yHl" firstAttribute="leading" secondItem="QPQ-8I-hNM" secondAttribute="leading" constant="15" id="P7Z-eh-3Sd"/>
+                            <constraint firstAttribute="bottom" secondItem="9qX-6s-yHl" secondAttribute="bottom" constant="20" id="Ss0-ek-0GW"/>
+                            <constraint firstItem="SEO-iF-S6z" firstAttribute="top" secondItem="QPQ-8I-hNM" secondAttribute="top" constant="10" id="efF-m2-Zt1"/>
+                            <constraint firstItem="9qX-6s-yHl" firstAttribute="top" secondItem="QPQ-8I-hNM" secondAttribute="top" constant="20" id="oMf-f3-Sjo"/>
+                            <constraint firstItem="SEO-iF-S6z" firstAttribute="centerY" secondItem="9qX-6s-yHl" secondAttribute="centerY" id="s4f-Fy-ZeD"/>
+                            <constraint firstAttribute="trailing" secondItem="SEO-iF-S6z" secondAttribute="trailing" constant="15" id="u9Z-27-CE3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QPQ-8I-hNM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4Tu-LY-OBH"/>
+                    <constraint firstAttribute="trailing" secondItem="QPQ-8I-hNM" secondAttribute="trailing" id="hxZ-Q4-8N3"/>
+                    <constraint firstItem="QPQ-8I-hNM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tkU-EB-zq6"/>
+                    <constraint firstAttribute="bottom" secondItem="QPQ-8I-hNM" secondAttribute="bottom" id="x5K-Pm-Ojr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgPet" destination="9qX-6s-yHl" id="3aA-gz-lEg"/>
+                <outlet property="lblPetName" destination="SEO-iF-S6z" id="uWw-KS-LE1"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="21.47887323943662"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
